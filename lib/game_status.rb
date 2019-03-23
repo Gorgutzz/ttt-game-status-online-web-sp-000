@@ -21,3 +21,10 @@ def won?(board)
     combo.all?{|index| board[index] == "X"} || combo.all?{|index| board[index] == "O"}
   end
 end
+
+def full?(board)
+  board.all?{|index| index == "X"} || board.all?{|index| index == "O"}
+
+
+
+  
